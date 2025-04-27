@@ -1,0 +1,116 @@
+/* En la parte superior de tu archivo CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+
+
+header img {
+  display: block;
+  margin: auto;
+  position: center;
+}
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0,  0.1);
+  background-color: transparent;
+  backdrop-filter: blur(90px);
+  height: 60px;
+}
+
+/* Contenedor para organizar los h2 en columnas */
+.contenedor {
+  display: flex;
+  /* Activa el modelo de caja flexible */
+  justify-content: center;
+  /* Centra los elementos en el eje horizontal */
+  gap: 50px;
+  /* Espaciado entre columnas */
+  margin-top: 20px;
+  /* Espacio arriba */
+}
+
+/* Estilizar los enlaces */
+h2 a {
+  text-decoration: none;
+  /* Quita el subrayado */
+  color: #333;
+  /* Color oscuro */
+  font-size: 24px;
+  /* Tamaño del texto */
+}
+
+p {
+  color: grey;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+.banner{
+  background-image: url(../imagenes-capricho/red-panda-ai.jpeg);
+ background-size:cover ;
+ height: 400px;
+ background-position: center;
+ 
+ }
+/*Orden de menu*/
+nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 20px;
+  padding: 5px 0;
+  float: left;
+  align-items: center;
+}
+.contenedor-grid img{
+  width: 90%;
+  height: 90%;
+}
+.contenedor-grid{
+  display: grid;
+  grid-template-areas:
+  "bolso4 bolso5 bolso6"
+  "texto1 texto1 texto1"
+  
+  "bolso1 bolso2 bolso3";
+  grid-template-columns: 1fr 1fr 1fr ;
+
+  grid-template-rows: 600px 50px 600px;
+  
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.grid-img1{
+  grid-area: bolso1;
+
+}
+.grid-img2{
+  grid-area: bolso2;
+}
+.grid-img3{
+  grid-area: bolso3;
+}
+.grid-texto1{
+  grid-area: texto1;
+}
+.grid-img4{
+  grid-area: bolso4;
+
+}
+.grid-img5{
+  grid-area: bolso5;
+}
+.grid-img6{
+  grid-area: bolso6;
+}
