@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capriccio</title>
@@ -11,47 +12,72 @@
     <!-- JavaScript de Bootstrap (opcional, para componentes interactivos) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
 
-    
+
     <!--encabezado-->
     <header>
-        
+
         <section class="banner">
-           
-                <nav class="navbar">
-                    <ul>
-                        <li><h2><a href="#">Home</a></h2></li>
-                       <li><h2><a href="./pages/bolsos.html">Bolsos</a></h2></li> 
-        
-                        <li><h2><a href="./pages/colecciones.html">Colecciones</a></h2></li>
-               
-                        <li><h2><a href="./pages/accesorios.html">Accesorio</a></h2></li>
-        
-                        <li><h2> <a href="./pages/carrito.html">Carrito</a></h2> </li>
-        
-                    </ul>
-                </nav>
-    
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./pages/bolsos.html">Bolsos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/colecciones.html">Colecciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/accesorios.html">Accesorios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/carrito.html">Carrito</a>
+                            </li>
+                        </ul>
+                    </div>
+                      
+                </div>
+            </nav>
+
+
         </section>
-    
-        
+
+
 
     </header>
 
     <!--cuerpo-->
     <main>
 
+        <h3 class="d-flex justify-content-center align-items-center text-muted" style="height: 50px;">Elegancia con alma de capricho.
+            por que cada detalle es un capricho.
+        </h3>
         <section class="contenedor-grid">
-             <img class="grid-img1" src="/imagenes-capricho/bolso1.jpg" alt="">
+            <img class="grid-img1" src="/imagenes-capricho/bolso1.jpg" alt="">
             <img class="grid-img2" src="/imagenes-capricho/bolso2.jpg" alt="">
             <img class="grid-img3" src="/imagenes-capricho/bolso3.jpg" alt="">
             <img class="grid-img4" src="/imagenes-capricho/bolso4.jpg" alt="">
             <img class="grid-img5" src="/imagenes-capricho/bolso5.jpg" alt="">
             <img class="grid-img6" src="/imagenes-capricho/accesorio letra P.jpg" alt="">
-            <p class="grid-texto1">elegancia con alma de capricho.
-                por que cada detalle es un capricho.
-            </p>
+            <div class="grid-texto1">
+                <section>
+                    <p>lujo con proposito, creado por mujeres para mujeres</p>
+                </section>
+                <!--mision de la marca-->
+                <section>
+                    <h3>mision</h3>
+                    <p>cada accesorio es un reflejo de nuestra mision;
+                        empoderar a las mujeres desde dentro hacia afuera,
+                        desde quienes lo llevan hasta quienes lo crean</p>
+                </section>
+            </div>
 
         </section>
         <!--presentacion-->
@@ -61,7 +87,7 @@
             </p>
         </section>
         <!--imagen de bolso-->
-       <!-- <section>
+        <!-- <section>
             <img src="./imagenes-capricho/bolso1.jpg" alt="">
         </section> -->
         <!--history telling de la marca-->
@@ -72,11 +98,11 @@
         <section>
             <h3>mision</h3>
             <p>cada accesorio es un reflejo de nuestra mision;
-                 empoderar a las mujeres desde dentro hacia afuera,
-                 desde quienes lo llevan hasta quienes lo crean</p>
+                empoderar a las mujeres desde dentro hacia afuera,
+                desde quienes lo llevan hasta quienes lo crean</p>
         </section>
     </main>
-    
+
 
     <!--pie de pagina-->
 
@@ -84,4 +110,5 @@
 
     </footer>
 </body>
+
 </html>
