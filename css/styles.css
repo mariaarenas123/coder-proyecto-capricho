@@ -56,7 +56,7 @@ h3 {
 .banner{
   background-image: url(../imagenes-capricho/red-panda-ai.jpeg);
  background-size:cover ;
- height: 400px;
+ height: 600px;
  background-position: center;
  
  }
@@ -121,4 +121,52 @@ nav ul li {
 }
 .grid-img6{
   grid-area: bolso6;
+}
+.contenedor-grid-bolsos{
+  display: grid;
+  grid-template-areas:
+  "bolso4 bolso5 bolso6"
+  "bolso1 bolso2 bolso3";
+  grid-template-columns: repeat(3, 1fr) ;
+  gap: 0;
+
+  grid-template-rows: 400px 400px 400px;
+  
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.contenedor-grid-bolsos img{
+  width: 96%;
+  height: 80%;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+}
+.grid-bolso1{
+  grid-area: bolso1;
+
+}
+.grid-bolso2{
+  grid-area: bolso2;
+
+}
+.grid-bolso3{
+  grid-area: bolso3;
+
+}
+.grid-bolso4{
+  grid-area: bolso4;
+
+}
+.grid-bolso5{
+  grid-area: bolso5;
+
+}
+.grid-bolso6{
+  grid-area: bolso6;
+
 }
