@@ -1,0 +1,168 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap");
+body {
+  font-family: "Montserrat", "Poppins", sans-serif;
+}
+
+/*productos*/
+.padre-productos {
+  width: 100%;
+  height: 400px;
+  background-color: #f0f0f0;
+  /* color opcional para verlo */
+  display: flex;
+  overflow: hidden;
+}
+.padre-productos .img1 {
+  background-image: url("../imagenes-capricho/bolso1.jpg");
+}
+.padre-productos .img2 {
+  background-image: url("../imagenes-capricho/bolso2.jpg");
+}
+.padre-productos .img3 {
+  background-image: url("../imagenes-capricho/bolso3.jpg");
+}
+.padre-productos .img4 {
+  background-image: url("../imagenes-capricho/bolso4.jpg");
+}
+.padre-productos .hijos-producto {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 25%;
+  position: relative;
+}
+
+.info-producto {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+  width: 100%;
+  text-align: left;
+  padding: 5px 0;
+}
+.info-producto h3 {
+  color: #bbb;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.3), 0 0 8px rgba(255, 255, 255, 0.014);
+}
+
+/*espaciado del header*/
+.div-espaciado-del-header {
+  height: 100px;
+}
+
+header img {
+  display: block;
+  margin: auto;
+  position: center;
+}
+
+/* Contenedor para organizar los h2 en columnas */
+.contenedor {
+  display: flex;
+  /* Activa el modelo de caja flexible */
+  justify-content: center;
+  /* Centra los elementos en el eje horizontal */
+  gap: 50px;
+  /* Espaciado entre columnas */
+  margin-top: 20px;
+  /* Espacio arriba */
+}
+
+/* Estilizar los enlaces */
+h2 a {
+  text-decoration: none;
+  /* Quita el subrayado */
+  color: #333;
+  /* Color oscuro */
+  font-size: 24px;
+  /* Tamaño del texto */
+}
+
+p {
+  color: grey;
+}
+
+h3 {
+  font-weight: normal;
+  color: gray;
+}
+
+.banner {
+  background-image: url(../imagenes-capricho/red-panda-ai.jpeg);
+  background-size: cover;
+  height: 600px;
+  background-position: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  backdrop-filter: blur(90px);
+  height: 60px;
+}
+.navbar * ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar * ul li {
+  list-style: none;
+  margin: 0 20px;
+  padding: 5px 0;
+  float: left;
+  align-items: center;
+}
+
+/*Orden de menu*/
+.contenedor-grid {
+  display: grid;
+  grid-template-areas: "bolso4 bolso5 bolso6" "texto1 texto1 texto1" "bolso1 bolso2 bolso3";
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  grid-template-rows: 600px 50px 600px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.contenedor-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.contenedor-grid .mision-de-la-marca {
+  height: 100px;
+}
+.contenedor-grid .grid-img1 {
+  grid-area: bolso1;
+}
+.contenedor-grid .grid-img2 {
+  grid-area: bolso2;
+}
+.contenedor-grid .grid-img3 {
+  grid-area: bolso3;
+}
+.contenedor-grid .grid-texto1 {
+  grid-area: texto1;
+}
+.contenedor-grid .grid-img4 {
+  grid-area: bolso4;
+}
+.contenedor-grid .grid-img5 {
+  grid-area: bolso5;
+}
+.contenedor-grid .grid-img6 {
+  grid-area: bolso6;
+}
+
+/*# sourceMappingURL=estilos.css.map */
