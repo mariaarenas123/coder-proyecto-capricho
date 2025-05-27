@@ -4,75 +4,6 @@ body {
     font-family: 'Montserrat', 'Poppins', sans-serif;
 }
 
-/*productos*/
-.padre-productos {
-    width: 100%;
-    height: 400px;
-    background-color: #f0f0f0;
-    /* color opcional para verlo */
-    display: flex;
-    overflow: hidden;
-
-    .img1 {
-        background-image: url('../imagenes-capricho/bolso1.jpg');
-    }
-
-    .img2 {
-        background-image: url('../imagenes-capricho/bolso2.jpg');
-    }
-
-    .img3 {
-        background-image: url('../imagenes-capricho/bolso3.jpg');
-    }
-
-    .img4 {
-        background-image: url('../imagenes-capricho/bolso4.jpg');
-    }
-
-    .img5 {
-        background-image: url('../imagenes-capricho/accesorioCactus.jpg');
-    }
-    .img7 {
-    background-image: url('../imagenes-capricho/accesorioCargaderasParaCelular.jpg');
-    }
-
-    .img8 {
-    background-image: url('../imagenes-capricho/bolso5.jpg');
-    }
-
-}
-
-
-
-.hijos-producto {
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 25%;
-    position: relative;
-}
-
-
-
-
-.info-producto {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
-    width: 100%;
-    text-align: left;
-    padding: 5px 0;
-
-    h3 {
-        color: #bbb;
-        text-shadow:
-            0 0 4px rgba(255, 255, 255, 0.3),
-            0 0 8px rgba(255, 255, 255, 0.014);
-    }
-}
-
 /*espaciado del header*/
 .div-espaciado-del-header {
     height: 100px;
@@ -99,30 +30,49 @@ header img {
     /* Espacio arriba */
 }
 
-/* Estilizar los enlaces */
-h2 a {
-    text-decoration: none;
-    /* Quita el subrayado */
-    color: #333;
-    /* Color oscuro */
-    font-size: 24px;
-    /* Tamaño del texto */
-}
+
 
 p {
     color: grey;
+    font-size: 24px;
 }
+
 
 h3 {
     font-weight: normal;
     color: gray;
+    text-align: center;
 }
 
-.banner {
-    background-image: url(../imagenes-capricho/red-panda-ai.jpeg);
+
+
+.slide-personalizado {
+
+    height: 100px;
+
+    .carousel-inner {
+        .carousel-item {
+            img {
+                height: 700px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+
+}
+
+header {
+    display: block;
     background-size: cover;
     height: 600px;
     background-position: center;
+}
+
+.navbar-container {
+    display: block;
+    height: 100px;
 }
 
 .navbar {
@@ -150,18 +100,22 @@ h3 {
     }
 }
 
+main {
+    display: block;
+}
 
 /*Orden de menu*/
 .contenedor-grid {
     display: grid;
     grid-template-areas:
-        "bolso4 bolso5 bolso6"
-        "texto1 texto1 texto1"
-        "bolso1 bolso2 bolso3";
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0;
+        "bolso1 bolso2 bolso3 bolso4"
+        "texto1 texto1 texto1 texto1"
+        "bolso5 bolso6 bolso7 bolso8";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 
-    grid-template-rows: 600px 50px 600px;
+    grid-template-rows: 600px auto 600px;
+    display: grid;
 
     justify-content: center;
     justify-items: center;
@@ -178,7 +132,12 @@ h3 {
     }
 
     .mision-de-la-marca {
-        height: 100px;
+       
+        height: 300px;
+        grid-area: texto1;
+        align-items: center;
+        text-align: center;
+        
     }
 
     .grid-img1 {
@@ -212,4 +171,115 @@ h3 {
         grid-area: bolso6;
     }
 
+    .grid-img7 {
+        grid-area: bolso7;
+    }
+
+    .grid-img8 {
+        grid-area: bolso8;
+    }
+
+}
+
+/*productos*/
+.padre-productos {
+    grid-template-areas:
+        "titulo titulo titulo titulo "
+        "img1 img2 img3 img4"
+        "texto texto texto texto"
+        "img5 img6 img7 img8";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    grid-template-rows: auto 600px 300px 600px;
+    display: grid;
+
+    .hijo-producto {
+        display: block;
+       
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        .info-producto {
+            position: relative;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(to top, rgb(155, 151, 151), transparent);
+            width: 100%;
+            text-align: left;
+            padding: 5px 0;
+            display: block;
+
+            h2 {
+                font-size: 1.2em;
+                color: #0a0909;
+                text-shadow:
+                    0 0 4px rgba(255, 255, 255, 0.3),
+                    0 0 8px rgba(255, 255, 255, 0.014);
+            }
+        }
+
+
+
+    }
+
+    .img1 {
+        grid-area: img1;
+    }
+
+    .img2 {
+        grid-area: img2;
+    }
+
+    .img3 {
+        grid-area: img3;
+    }
+
+    .img4 {
+        grid-area: img4;
+    }
+
+    .img5 {
+        grid-area: img5;
+    }
+
+    .img6 {
+        grid-area: img6;
+    }
+
+    .img7 {
+        grid-area: img7;
+    }
+
+    .img8 {
+        grid-area: img8;
+    }
+    .texto{
+        grid-area: texto;
+        text-align: center;
+        align-content: center;
+    }
+    
+
+
+
+
+
+
+}
+
+.secciones-header-texto {
+    grid-area: titulo;
+    height: 300px;
+    text-align: center;
+    align-content: end;
+    
 }

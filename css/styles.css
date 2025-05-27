@@ -1,19 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap");
+body {
+  font-family: "Montserrat", "Poppins", sans-serif;
+}
 
+/*espaciado del header*/
+.div-espaciado-del-header {
+  height: 100px;
+}
 
+header img {
+  display: block;
+  margin: auto;
+  position: center;
+}
 
+/* Contenedor para organizar los h2 en columnas */
+.contenedor {
+  display: flex;
+  /* Activa el modelo de caja flexible */
+  justify-content: center;
+  /* Centra los elementos en el eje horizontal */
+  gap: 50px;
+  /* Espaciado entre columnas */
+  margin-top: 20px;
+  /* Espacio arriba */
+}
 
+p {
+  color: grey;
+  font-size: 24px;
+}
 
+h3 {
+  font-weight: normal;
+  color: gray;
+  text-align: center;
+}
 
+.slide-personalizado {
+  height: 100px;
+}
+.slide-personalizado .carousel-inner .carousel-item img {
+  height: 700px;
+  width: 100%;
+  object-fit: cover;
+}
 
+header {
+  display: block;
+  background-size: cover;
+  height: 600px;
+  background-position: center;
+}
 
+.navbar-container {
+  display: block;
+  height: 100px;
+}
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  backdrop-filter: blur(90px);
+  height: 60px;
+}
+.navbar * ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar * ul li {
+  list-style: none;
+  margin: 0 20px;
+  padding: 5px 0;
+  float: left;
+  align-items: center;
+}
 
+main {
+  display: block;
+}
 
+/*Orden de menu*/
+.contenedor-grid {
+  display: grid;
+  grid-template-areas: "bolso1 bolso2 bolso3 bolso4" "texto1 texto1 texto1 texto1" "bolso5 bolso6 bolso7 bolso8";
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-rows: 600px auto 600px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.contenedor-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.contenedor-grid .mision-de-la-marca {
+  height: 300px;
+  grid-area: texto1;
+  align-items: center;
+  text-align: center;
+}
+.contenedor-grid .grid-img1 {
+  grid-area: bolso1;
+}
+.contenedor-grid .grid-img2 {
+  grid-area: bolso2;
+}
+.contenedor-grid .grid-img3 {
+  grid-area: bolso3;
+}
+.contenedor-grid .grid-texto1 {
+  grid-area: texto1;
+}
+.contenedor-grid .grid-img4 {
+  grid-area: bolso4;
+}
+.contenedor-grid .grid-img5 {
+  grid-area: bolso5;
+}
+.contenedor-grid .grid-img6 {
+  grid-area: bolso6;
+}
+.contenedor-grid .grid-img7 {
+  grid-area: bolso7;
+}
+.contenedor-grid .grid-img8 {
+  grid-area: bolso8;
+}
 
+/*productos*/
+.padre-productos {
+  grid-template-areas: "titulo titulo titulo titulo " "img1 img2 img3 img4" "texto texto texto texto" "img5 img6 img7 img8";
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  grid-template-rows: auto 600px 300px 600px;
+  display: grid;
+}
+.padre-productos .hijo-producto {
+  display: block;
+}
+.padre-productos .hijo-producto img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.padre-productos .hijo-producto .info-producto {
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to top, rgb(155, 151, 151), transparent);
+  width: 100%;
+  text-align: left;
+  padding: 5px 0;
+  display: block;
+}
+.padre-productos .hijo-producto .info-producto h2 {
+  font-size: 1.2em;
+  color: #0a0909;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.3), 0 0 8px rgba(255, 255, 255, 0.014);
+}
+.padre-productos .img1 {
+  grid-area: img1;
+}
+.padre-productos .img2 {
+  grid-area: img2;
+}
+.padre-productos .img3 {
+  grid-area: img3;
+}
+.padre-productos .img4 {
+  grid-area: img4;
+}
+.padre-productos .img5 {
+  grid-area: img5;
+}
+.padre-productos .img6 {
+  grid-area: img6;
+}
+.padre-productos .img7 {
+  grid-area: img7;
+}
+.padre-productos .img8 {
+  grid-area: img8;
+}
+.padre-productos .texto {
+  grid-area: texto;
+  text-align: center;
+  align-content: center;
+}
 
+.secciones-header-texto {
+  grid-area: titulo;
+  height: 300px;
+  text-align: center;
+  align-content: end;
+}
 
-
-
-
-
-
+/*# sourceMappingURL=styles.css.map */
