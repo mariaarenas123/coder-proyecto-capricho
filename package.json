@@ -1,0 +1,24 @@
+{
+  "name": "coder-proyecto-capricho",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/styles.scss:css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariaarenas123/coder-proyecto-capricho.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariaarenas123/coder-proyecto-capricho/issues"
+  },
+  "homepage": "https://github.com/mariaarenas123/coder-proyecto-capricho#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.71.1"
+  }
+}

@@ -1,0 +1,164 @@
+.padre-colecciones {
+    grid-template-areas:
+        "titulo titulo titulo titulo "
+        "img1 img2 img3 img4"
+        "img5 img6 img7 img8"
+        "img9 img10 img11 img12"
+        "texto texto texto texto"
+        "img13 img14 img15 img16"
+        "img17 img18 img19 img20"
+        "img21 img22 img23 img24";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    grid-template-rows: auto 300px 300px 300px 150px 300px 300px 300px;
+    display: grid;
+
+    .hijo-colecciones {
+        display: block;
+        justify-content: center;
+        border-radius: 10px;
+        overflow: hidden;
+
+
+        img {
+            width: 100%;
+            height: 80%;
+            object-fit: fill;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        .info-producto {
+            position: relative;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(to top, rgb(155, 151, 151), transparent);
+            width: 100%;
+            text-align: left;
+            padding: 5px 0;
+            display: block;
+
+            h2 {
+                font-size: 1.2em;
+                color: #0a0909;
+                text-shadow:
+                    0 0 4px rgba(255, 255, 255, 0.3),
+                    0 0 8px rgba(255, 255, 255, 0.014);
+            }
+        }
+
+
+
+    }
+
+    .img1 {
+        grid-area: img1;
+    }
+
+    .img2 {
+        grid-area: img2;
+    }
+
+    .img3 {
+        grid-area: img3;
+    }
+
+    .img4 {
+        grid-area: img4;
+    }
+
+    .img5 {
+        grid-area: img5;
+    }
+
+    .img6 {
+        grid-area: img6;
+    }
+
+    .img7 {
+        grid-area: img7;
+    }
+
+    .img8 {
+        grid-area: img8;
+    }
+
+    .texto {
+        grid-area: texto;
+        text-align: center;
+        align-content: center;
+    }
+
+    .img9 {
+        grid-area: img9;
+    }
+
+    .img10 {
+        grid-area: img10;
+    }
+
+    .img11 {
+        grid-area: img11;
+    }
+
+    .img12 {
+        grid-area: img12;
+    }
+
+    .img13 {
+        grid-area: img13;
+    }
+
+    .img14 {
+        grid-area: img14;
+    }
+
+    .img15 {
+        grid-area: img15;
+    }
+
+    .img16 {
+        grid-area: img16;
+    }
+
+    .img17 {
+        grid-area: img17;
+    }
+
+    .img18 {
+        grid-area: img18;
+    }
+
+    .img19 {
+        grid-area: img19;
+    }
+
+    .img20 {
+        grid-area: img20;
+    }
+
+    .img21 {
+        grid-area: img21;
+    }
+
+    .img22 {
+        grid-area: img22;
+    }
+
+    .img23 {
+        grid-area: img23;
+    }
+
+    .img24 {
+        grid-area: img24;
+    }
+
+
+
+
+
+
+}

@@ -1,0 +1,98 @@
+.padre-accesorios {
+    grid-template-areas:
+        "titulo titulo titulo titulo "
+        "img17 img18 img19 img20"
+        "texto texto texto texto"
+        "img21 img22 img23 img24";
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    grid-template-rows: auto 300px 150px 300px;
+    display: grid;
+
+
+    .hijo-accesorios {
+        display: block;
+        justify-content: center;
+        border-radius: 10px;
+        overflow: hidden;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        .info-producto {
+            position: relative;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(to top, rgb(155, 151, 151), transparent);
+            width: 100%;
+            text-align: left;
+            padding: 5px 0;
+            display: block;
+
+            h2 {
+                font-size: 1.2em;
+                color: #0a0909;
+                text-shadow:
+                    0 0 4px rgba(255, 255, 255, 0.3),
+                    0 0 8px rgba(255, 255, 255, 0.014);
+            }
+        }
+
+
+
+    }
+
+    .img17 {
+        grid-area: img17;
+    }
+
+    .img18 {
+        grid-area: img18;
+    }
+
+    .img19 {
+        grid-area: img19;
+    }
+
+    .img20 {
+        grid-area: img20;
+    }
+
+    .img21 {
+        grid-area: img21;
+    }
+
+    .img22 {
+        grid-area: img22;
+    }
+
+    .img23 {
+        grid-area: img23;
+    }
+
+    .img24 {
+        grid-area: img24;
+    }
+
+    .texto {
+        grid-area: texto;
+        text-align: center;
+        align-content: center;
+    }
+
+
+
+
+
+
+}
