@@ -191,7 +191,7 @@ main {
 }
 
 /*productos*/
-.padre-productos {
+.padre-bolsos {
     grid-template-areas:
         "titulo titulo titulo titulo "
         "img1 img2 img3 img4"
@@ -205,9 +205,13 @@ main {
     display: grid;
 
 
-    .hijo-producto {
+    .hijo-bolsos {
         display: block;
         justify-content: center;
+        border-radius: 10px;
+        
+
+
 
 
         img {

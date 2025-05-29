@@ -149,18 +149,19 @@ main {
 }
 
 /*productos*/
-.padre-productos {
+.padre-bolsos {
   grid-template-areas: "titulo titulo titulo titulo " "img1 img2 img3 img4" "texto texto texto texto" "img5 img6 img7 img8";
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   grid-template-rows: auto 300px 150px 300px;
   display: grid;
 }
-.padre-productos .hijo-producto {
+.padre-bolsos .hijo-bolsos {
   display: block;
   justify-content: center;
+  border-radius: 10px;
 }
-.padre-productos .hijo-producto img {
+.padre-bolsos .hijo-bolsos img {
   width: 100%;
   height: 100%;
   object-fit: fill;
@@ -168,7 +169,7 @@ main {
   padding: 0;
   border: none;
 }
-.padre-productos .hijo-producto .info-producto {
+.padre-bolsos .hijo-bolsos .info-producto {
   position: relative;
   bottom: 0;
   left: 50%;
@@ -179,36 +180,36 @@ main {
   padding: 5px 0;
   display: block;
 }
-.padre-productos .hijo-producto .info-producto h2 {
+.padre-bolsos .hijo-bolsos .info-producto h2 {
   font-size: 1.2em;
   color: #0a0909;
   text-shadow: 0 0 4px rgba(255, 255, 255, 0.3), 0 0 8px rgba(255, 255, 255, 0.014);
 }
-.padre-productos .img1 {
+.padre-bolsos .img1 {
   grid-area: img1;
 }
-.padre-productos .img2 {
+.padre-bolsos .img2 {
   grid-area: img2;
 }
-.padre-productos .img3 {
+.padre-bolsos .img3 {
   grid-area: img3;
 }
-.padre-productos .img4 {
+.padre-bolsos .img4 {
   grid-area: img4;
 }
-.padre-productos .img5 {
+.padre-bolsos .img5 {
   grid-area: img5;
 }
-.padre-productos .img6 {
+.padre-bolsos .img6 {
   grid-area: img6;
 }
-.padre-productos .img7 {
+.padre-bolsos .img7 {
   grid-area: img7;
 }
-.padre-productos .img8 {
+.padre-bolsos .img8 {
   grid-area: img8;
 }
-.padre-productos .texto {
+.padre-bolsos .texto {
   grid-area: texto;
   text-align: center;
   align-content: center;
