@@ -114,6 +114,37 @@
   grid-area: img24;
 }
 
+.header-colecciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.header-colecciones img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.header-colecciones .hijo-header-colecciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 33.33%;
+}
+.header-colecciones .hijo-header-colecciones .texto-hijo-header-colecciones {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.header-colecciones .hijo-header-colecciones .texto-hijo-header-colecciones h2 {
+  font-size: 1.2em;
+  color: #0a0909;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.3), 0 0 8px rgba(255, 255, 255, 0.014);
+  margin: 0;
+}
+
 .padre-accesorios {
   grid-template-areas: "titulo titulo titulo titulo " "img17 img18 img19 img20" "texto texto texto texto" "img21 img22 img23 img24";
   grid-template-columns: repeat(4, 1fr);
