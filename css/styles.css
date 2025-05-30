@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap");
 .padre-colecciones {
-  grid-template-areas: "titulo titulo titulo titulo " "img1 img2 img3 img4" "img5 img6 img7 img8" "img9 img10 img11 img12" "texto texto texto texto" "img13 img14 img15 img16" "img17 img18 img19 img20" "img21 img22 img23 img24";
+  grid-template-areas: "titulo titulo titulo titulo" "texto1 texto1 texto1 texto1" "img1 img2 img3 img4" "img5 img6 img7 img8" "texto2 texto2 texto2 texto2" "img9 img10 img11 img12" "img13 img14 img15 img16" "texto3 texto3 texto3 texto3" "img17 img18 img19 img20" "img21 img22 img23 img24";
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  grid-template-rows: auto 300px 300px 300px 150px 300px 300px 300px;
+  grid-template-rows: auto auto 300px 300px auto 300px 300px auto 300px 300px;
   display: grid;
 }
 .padre-colecciones .hijo-colecciones {
@@ -36,6 +36,11 @@
   color: #0a0909;
   text-shadow: 0 0 4px rgba(255, 255, 255, 0.3), 0 0 8px rgba(255, 255, 255, 0.014);
 }
+.padre-colecciones .texto1 {
+  grid-area: texto1;
+  text-align: center;
+  align-content: center;
+}
 .padre-colecciones .img1 {
   grid-area: img1;
 }
@@ -60,8 +65,8 @@
 .padre-colecciones .img8 {
   grid-area: img8;
 }
-.padre-colecciones .texto {
-  grid-area: texto;
+.padre-colecciones .texto2 {
+  grid-area: texto2;
   text-align: center;
   align-content: center;
 }
@@ -88,6 +93,11 @@
 }
 .padre-colecciones .img16 {
   grid-area: img16;
+}
+.padre-colecciones .texto3 {
+  grid-area: texto3;
+  text-align: center;
+  align-content: center;
 }
 .padre-colecciones .img17 {
   grid-area: img17;

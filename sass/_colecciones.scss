@@ -1,17 +1,18 @@
 .padre-colecciones {
     grid-template-areas:
-        "titulo titulo titulo titulo "
+        "titulo titulo titulo titulo"
+        "texto1 texto1 texto1 texto1"
         "img1 img2 img3 img4"
         "img5 img6 img7 img8"
+        "texto2 texto2 texto2 texto2"
         "img9 img10 img11 img12"
-        "texto texto texto texto"
         "img13 img14 img15 img16"
+        "texto3 texto3 texto3 texto3"
         "img17 img18 img19 img20"
         "img21 img22 img23 img24";
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-
-    grid-template-rows: auto 300px 300px 300px 150px 300px 300px 300px;
+    grid-template-rows: auto auto 300px 300px auto 300px 300px auto 300px 300px;
     display: grid;
 
     .hijo-colecciones {
@@ -53,6 +54,11 @@
 
 
     }
+    .texto1 {
+        grid-area: texto1;
+        text-align: center;
+        align-content: center;
+    }
 
     .img1 {
         grid-area: img1;
@@ -86,8 +92,8 @@
         grid-area: img8;
     }
 
-    .texto {
-        grid-area: texto;
+    .texto2 {
+        grid-area: texto2;
         text-align: center;
         align-content: center;
     }
@@ -122,6 +128,11 @@
 
     .img16 {
         grid-area: img16;
+    }
+    .texto3 {
+        grid-area: texto3;
+        text-align: center;
+        align-content: center;
     }
 
     .img17 {
