@@ -420,7 +420,20 @@ main {
 }
 
 footer {
-  background-color: #aea2a2;
+  height: 100px;
+  background-color: rgba(235, 235, 235, 0.8431372549);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+footer h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+footer p {
+  font-size: 16px;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=styles.css.map */

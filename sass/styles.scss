@@ -205,7 +205,21 @@ main {
     align-content: end;
 
 }
-$primary-color: #aea2a2;
+$primary-color: #ebebebd7;
+
 footer {
+    height: 100px;
     background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    text-align: center;
+    h4{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 16px;
+        font-weight: normal;
+    }
 }
